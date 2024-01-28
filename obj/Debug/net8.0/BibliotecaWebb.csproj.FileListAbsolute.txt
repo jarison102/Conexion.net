@@ -255,3 +255,4 @@ C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\BibliotecaWebb.pdb
 C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\BibliotecaWebb.genruntimeconfig.cache
 C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\ref\BibliotecaWebb.dll
 C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\BibliotecaWebb.sourcelink.json
+C:\xampp\htdocs\BibliotecaWebb\bin\Debug\net8.0\Dapper.dll

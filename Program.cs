@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using BibliotecaWebb.Repositories;
 
 public class Program
 {
@@ -23,24 +24,34 @@ public class Program
                 webBuilder.UseStartup<Startup>();
             });
 
-    public class Startup
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
     {
-        public Startup(IConfiguration configuration)
+        // Otros servicios
+
+        // Registra AutorRepository con una cadena de conexión
+        services.AddScoped<AutorRepository>(provider =>
         {
-            Configuration = configuration;
-        }
+            // Obtiene la cadena de conexión directamente de la configuración
+            var configuration = provider.GetRequiredService<IConfiguration>();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-        public IConfiguration Configuration { get; }
+            // Verifica si la cadena de conexión no es nula antes de crear AutorRepository
+            if (connectionString != null)
+            {
+                return new AutorRepository(connectionString);
+            }
+            else
+            {
+                throw new InvalidOperationException("La cadena de conexión es nula.");
+            }
+        });
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            // Configurar la cadena de conexión a la base de datos SQL Server
-            services.AddDbContext<YourDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        // Otros servicios que puedas necesitar
+        services.AddControllersWithViews();
+    }
 
-            // Otros servicios que puedas necesitar
-            services.AddControllersWithViews();
-        }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -70,6 +81,7 @@ public class Program
             });
         }
     }
+    
 
 public class YourDbContext : DbContext
 {
@@ -77,20 +89,6 @@ public class YourDbContext : DbContext
     {
     }
 
-    public DbSet<Autor> Autores { get; set; }
-    public DbSet<Libro> Libros { get; set; }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        // Configuración de la relación uno a muchos entre Autor y Libro
-        modelBuilder.Entity<Autor>()
-            .HasMany(a => a.Libros)
-            .WithOne(l => l.Autor)
-            .HasForeignKey(l => l.AutorID)
-            .OnDelete(DeleteBehavior.Cascade); // Opcional, dependiendo de cómo quieras manejar la eliminación
-
-        // Otras configuraciones del modelo si es necesario
+        // Definir tus DbSet y modelos aquí
     }
-}
-
 }

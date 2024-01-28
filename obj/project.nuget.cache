@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "I7+ykpH7ISCHkTsBVmvtmBvFvIdXw/q5G7/mFpm8qs8i7Rs6+S9dQTMCmn/916X8GGq1kmKfsETy/mM+s+1nRA==",
+  "dgSpecHash": "qoi7G7HTK4ny0umDQOgnAmPjnqPfEdgyFMRMEO3wEdHcv5lxvE7JqUif/15Km7QU8EY/SDxyt9sBFpfziwpMtw==",
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\BibliotecaWebb\\BibliotecaWebb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jarim\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\jarim\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\jarim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jarim\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

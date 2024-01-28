@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaWebb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53776ca74787c433e05aeaab8b78a6ad11374f13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a98fed073894632f4093b5b50930f53fe556ca1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaWebb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaWebb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

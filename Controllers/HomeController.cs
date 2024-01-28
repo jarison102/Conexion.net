@@ -2,16 +2,20 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BibliotecaWebb.Models;
 using Microsoft.EntityFrameworkCore;
+using BibliotecaWebb.Repositories;
+
 
 namespace BibliotecaWebb.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+      private readonly AutorRepository _autorRepository;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, AutorRepository autorRepository)
     {
         _logger = logger;
+        _autorRepository = autorRepository;
     }
 
     public IActionResult Index()
@@ -49,7 +53,8 @@ public class HomeController : Controller
 
         public IActionResult Lista()
         {
-            return View();
+                var listaAutores = _autorRepository.ObtenerTodos();
+    return View(listaAutores);
         }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
