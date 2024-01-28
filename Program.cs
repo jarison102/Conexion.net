@@ -77,6 +77,20 @@ public class YourDbContext : DbContext
     {
     }
 
-        // Definir tus DbSet y modelos aquí
+    public DbSet<Autor> Autores { get; set; }
+    public DbSet<Libro> Libros { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // Configuración de la relación uno a muchos entre Autor y Libro
+        modelBuilder.Entity<Autor>()
+            .HasMany(a => a.Libros)
+            .WithOne(l => l.Autor)
+            .HasForeignKey(l => l.AutorID)
+            .OnDelete(DeleteBehavior.Cascade); // Opcional, dependiendo de cómo quieras manejar la eliminación
+
+        // Otras configuraciones del modelo si es necesario
     }
+}
+
 }
