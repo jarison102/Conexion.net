@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\BibliotecaWebb.bundle.scp.css"
     },
     {
+      "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\Styletable.css",
+      "PackagePath": "staticwebassets\\css\\Styletable.css"
+    },
+    {
       "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\js\\AnimacionIndex.js",
+      "PackagePath": "staticwebassets\\js\\AnimacionIndex.js"
     },
     {
       "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\js\\site.js",

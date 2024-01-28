@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I52Livm0Mz5l+Qb87mjQXec9rve1SFkqW5vNgN924G8=",
+  "Hash": "72YMSPyH5xvjWTh3SxdPrNNAPaP1Kc0bRqbggjp5jxs=",
   "Source": "BibliotecaWebb",
   "BasePath": "_content/BibliotecaWebb",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "C:\\xampp\\htdocs\\BibliotecaWebb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BibliotecaWebb.bundle.scp.css"
     },
     {
+      "Identity": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\Index.css",
+      "SourceId": "BibliotecaWebb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\",
+      "BasePath": "_content/BibliotecaWebb",
+      "RelativePath": "css/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Index.css"
+    },
+    {
       "Identity": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\site.css",
       "SourceId": "BibliotecaWebb",
       "SourceType": "Discovered",
@@ -74,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\Styletable.css",
+      "SourceId": "BibliotecaWebb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\",
+      "BasePath": "_content/BibliotecaWebb",
+      "RelativePath": "css/Styletable.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Styletable.css"
+    },
+    {
       "Identity": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\favicon.ico",
       "SourceId": "BibliotecaWebb",
       "SourceType": "Discovered",
@@ -91,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\js\\AnimacionIndex.js",
+      "SourceId": "BibliotecaWebb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\",
+      "BasePath": "_content/BibliotecaWebb",
+      "RelativePath": "js/AnimacionIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\AnimacionIndex.js"
     },
     {
       "Identity": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\js\\site.js",

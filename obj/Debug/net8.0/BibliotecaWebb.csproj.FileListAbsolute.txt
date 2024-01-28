@@ -254,3 +254,4 @@ C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\refint\BibliotecaWebb.dll
 C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\BibliotecaWebb.pdb
 C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\BibliotecaWebb.genruntimeconfig.cache
 C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\ref\BibliotecaWebb.dll
+C:\xampp\htdocs\BibliotecaWebb\obj\Debug\net8.0\BibliotecaWebb.sourcelink.json

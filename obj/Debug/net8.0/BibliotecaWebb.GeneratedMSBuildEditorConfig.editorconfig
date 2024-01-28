@@ -26,8 +26,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\xampp\htdocs\BibliotecaWebb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/xampp/htdocs/BibliotecaWebb/Views/Home/AgregarAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ3JlZ2FyQXV0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/xampp/htdocs/BibliotecaWebb/Views/Home/AgregarLibro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ3JlZ2FyTGlicm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/xampp/htdocs/BibliotecaWebb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/xampp/htdocs/BibliotecaWebb/Views/Home/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/xampp/htdocs/BibliotecaWebb/Views/Home/Privacy.cshtml]

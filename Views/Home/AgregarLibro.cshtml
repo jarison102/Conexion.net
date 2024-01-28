@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Agregar Autor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post" class="my-4">
+    <div class="form-group">
+        <label for="nombre">Titulo:</label>
+        <input type="text" class="form-control" id="Titulo" name="Titulo" required>
+        <label for="nombre">Autor:</label>
+        <select name="autor" id="autor" class="form-select">
+
+        </select>
+    </div>
+        <div style="margin-top: 10px;"> <!-- Ajusta el valor del margin-top según tus necesidades -->
+        <button type="submit" class="btn btn-primary">Agregar Libro</button>
+    </div>
+</form>
