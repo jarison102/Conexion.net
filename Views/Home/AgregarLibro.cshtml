@@ -1,19 +1,26 @@
+@using Microsoft.AspNetCore.Mvc.Rendering
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
-    ViewData["Title"] = "Agregar Autor";
+    ViewData["Title"] = "Agregar Libros";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <form method="post" class="my-4">
     <div class="form-group">
-        <label for="nombre">Titulo:</label>
-        <input type="text" class="form-control" id="Titulo" name="Titulo" required>
-        <label for="nombre">Autor:</label>
-        <select name="autor" id="autor" class="form-select">
+        <label for="titulo">Titulo:</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" required>
+        <label for="autor">Autor:</label>
 
+        <select name="autorId" id="autorId" class="form-select">
+            @foreach (var autor in ViewBag.ListaAutores)
+            {
+                <option value="@autor.Value">@autor.Text</option>
+            }
         </select>
     </div>
-        <div style="margin-top: 10px;"> <!-- Ajusta el valor del margin-top según tus necesidades -->
+    <div style="margin-top: 10px;">
         <button type="submit" class="btn btn-primary">Agregar Libro</button>
     </div>
 </form>
