@@ -13,22 +13,28 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var autor in Model)
-            {
-                <tr>
-                    <td data-title="ID">@autor.AutorID</td>
-                    <td data-title="Nombre">@autor.Nombre</td>
-                    <td data-title="Libros">
-                        @if (autor.Libros != null)
-                        {
-                            foreach (var libro in autor.Libros)
+        @foreach (var autor in Model)
+        {
+            <tr>
+                <td>@autor.AutorID</td>
+                <td>@autor.Nombre</td>
+                <td>
+                    @if (autor.Libros != null && autor.Libros.Any())
+                    {
+                        <ul>
+                            @foreach (var libro in autor.Libros)
                             {
-                                <span>@libro.Titulo</span><br />
+                                <li>@libro.Titulo</li>
                             }
-                        }
-                    </td>
-                </tr>
-            }
-        </tbody>
+                        </ul>
+                    }
+                    else
+                    {
+                        <span>Sin libros</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
     </table>
 </div>

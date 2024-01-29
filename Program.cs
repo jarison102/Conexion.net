@@ -12,7 +12,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("¡Hola, Mundo desde el método Main de Program!");
+        Console.WriteLine("¡Hola,Stived!! Corriendo..");
 
         CreateHostBuilder(args).Build().Run();
     }

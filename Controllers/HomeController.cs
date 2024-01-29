@@ -69,28 +69,21 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost]
-    public IActionResult AgregarLibro(string titulo, int autorId)
+[HttpPost]
+public IActionResult AgregarLibro(string titulo, int autorId)
+{
+    try
     {
-        try
-        {
-            // Aquí deberías guardar el nuevo libro en tu base de datos con el autor seleccionado
-            // Puedes utilizar el servicio ApplicationDbContext para interactuar con la base de datos
-
-            // Por ejemplo:
-            // var nuevoLibro = new Libro { Titulo = titulo, AutorID = autorId };
-            // _dbContext.Libros.Add(nuevoLibro);
-            // _dbContext.SaveChanges();
-
-            return RedirectToAction("Lista"); // Redirige a la página de lista después de agregar el libro
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError($"Error al agregar libro: {ex.Message}");
-            // Puedes redirigir a una página de error o manejar de alguna otra manera
-            return RedirectToAction("Error");
-        }
+        _autorRepository.AgregarLibro(titulo, autorId);
+        return RedirectToAction("Lista"); // Redirige a la página de lista después de agregar el libro
     }
+    catch (Exception ex)
+    {
+        _logger.LogError($"Error al agregar libro: {ex.Message}");
+        // Puedes redirigir a una página de error o manejar de alguna otra manera
+        return RedirectToAction("Error");
+    }
+}
 
     public IActionResult Lista()
     {
