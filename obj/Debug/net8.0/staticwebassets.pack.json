@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
+      "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\StyleFormularioAutor.css",
+      "PackagePath": "staticwebassets\\css\\StyleFormularioAutor.css"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\StyleFormularioLibro.css",
+      "PackagePath": "staticwebassets\\css\\StyleFormularioLibro.css"
+    },
+    {
       "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\css\\Styletable.css",
       "PackagePath": "staticwebassets\\css\\Styletable.css"
     },
@@ -19,6 +27,10 @@
     {
       "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\js\\AnimacionForms.js",
+      "PackagePath": "staticwebassets\\js\\AnimacionForms.js"
     },
     {
       "Id": "C:\\xampp\\htdocs\\BibliotecaWebb\\wwwroot\\js\\AnimacionIndex.js",
